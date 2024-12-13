@@ -1,0 +1,119 @@
+/*ーーーーーー 全体設定 ーーーーーーーー*/
+/* 背景色 */
+body{
+  background-color: rgb(250, 242, 231);
+}
+
+/* それぞれの見出し */
+h2{
+  text-align: center;
+  font-size: 50px;
+}
+
+/* 各セクションの上下幅 */
+section{
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+}
+
+
+/* トップページのレイアウト */
+
+#top-container{
+  display: flex;
+}
+
+#head-box1{
+  align-self: flex-start;
+}
+
+#head-box2{
+  justify-content: center;
+}
+
+#head-box3{
+  align-self: flex-end;
+}
+
+/* ーーーーーーーーここからheaderーーーーーーーーーーーー */
+
+/* プロフィール(名前) */
+#main-header{
+  /* padding-left: 100px; */
+}
+
+/* プロフィール(経歴・文章) */
+#sub-header{
+  /* padding-left: 100px; */
+}
+
+
+/* メイン写真 */
+#main-visual{
+  /* display: flex;
+  position: relative;
+  bottom: 205px;
+  left: 350px;
+  justify-content: space-between;
+  margin: 50px 300px 50px 300px; */
+}
+
+/* メニュー */
+#sub-menu{
+  /* font-size: 40px;
+  position: relative;
+  bottom: 450px;
+  left: 1500px; */
+}
+
+
+/* ------------ここからmain ----------------------*/
+
+/*ーーーーーー WORK ーーーーーーー */
+#Works{
+  background-color: rgb(255, 255, 255);
+}
+
+#category-list{
+  display: flex;
+}
+
+/* 実績リスト 写真*/
+#category-list > div{
+  width: 300px; /* 横に3つ並べるので1/3のサイズを指定 */
+  margin: 0 80px; /* 左右にそれぞれ8pxの余白 */
+  padding-left: 100px;
+}
+
+/* 実績リスト 文字 */
+.explanaton{
+  font-size: 20px;
+  text-align: center;
+  padding-left: 100px;
+
+}
+
+/*ーーーーーー SKILL ーーーーーーー */
+
+.skill-list{
+  display: flex;
+}
+
+.skill-item{
+  padding-left: 110px;
+  width: 15%;
+}
+
+.skill-text , .skill-name{
+  text-align: center;
+  padding-right: 110px;
+}
+
+/*ーーーーーー Abput ーーーーーーー */
+#about{
+  background-color: rgb(255, 255, 255);
+}
+.about-text{
+  text-align: center;
+}
