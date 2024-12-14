@@ -9,7 +9,6 @@
 
 
 <body id="body">
-
   <!-----------------
      ここからヘッダー 
   ------------------->
@@ -34,7 +33,7 @@
       <!-- BOX1  -->
 
       <!-- BOX2 -->
-      <div class="head-box2">
+      <div id="head-box2">
         <!-- メイン画像 -->
         <img id="main-visual" src="image/名称未設定 1.jpg" alt="メイン画像">
       </div>
@@ -42,12 +41,12 @@
 
       <!-- BOX3 -->
       <!-- メニュー一覧 -->
-      <div class="head-box3">
+      <div id="head-box3">
         <ul id="sub-menu"> 
-            <a  href="">Works</a><br>
-            <a  href="">Skill</a><br>
-            <a  href="">About</a>
-          </ul>
+          <a  href="#Works">Works</a><br>
+          <a  href="#Skill">Skill</a><br>
+          <a  href="#About">About</a>
+        </ul>
       </div>
       <!-- BOX3 -->
 
@@ -69,25 +68,35 @@
      <section id="Works">
       <h2 id="category">Works</h2>
         <div id="category-list">
+
           <div>
-            <img src="image/プロフィールサイト.png" alt="">
-            <p class="explanaton">プロフィールサイト</p>
+            <a href="works-2.html">
+              <img src="image/プロフィールサイト.png" alt="">
+              <p class="explanaton">プロフィールサイト</p>
+            </a>
           </div>
+
           <div>
-            <img src="image/大学のHP.png" alt="">
-            <p class="explanaton">大学のHP</p>
+            <a href="works-3.html">
+              <img src="image/美容室のHP.png" alt="">
+              <p class="explanaton">美容室のHP</p>
+            </a>
           </div>
+
           <div>
-            <img src="image/美容室のHP.png" alt="">
-            <p class="explanaton">美容室のHP</p>
-        </div>
+            <a href="works-6.html">
+              <img src="image/大学のHP.png" alt="">
+              <p class="explanaton">大学のHP</p>
+            </a>
+          </div>
+
         </div>
     </section>
 
      <!-- スキル -->
-    <section class="skill section" id="skill">
+    <section class="skill section" id="Skill">
       <div class="container">
-        <h2 class="title">SKILL</h2>
+        <h2 class="title">Skill</h2>
         <div class="skill-list">
           <div class="skill-item">
             <p class="skill-img"><img src="image/html.png" alt="html"></p>
@@ -134,7 +143,7 @@
     </section>
 <!-- /skill -->     
      <!-- アバウト -->
-      <section id="about">
+      <section id="About">
         <h2 class="category">About</h2>
         <p class="about-text">
           青木一真
@@ -154,5 +163,6 @@
   <footer>
   </footer>
   <!-- ここまでフッター -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 </html>
