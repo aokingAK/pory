@@ -1,7 +1,7 @@
 /*ーーーーーー 全体設定 ーーーーーーーー*/
 /* 背景色 */
 body{
-  background-color: rgb(250, 242, 231);
+  background-color: #faf2e7;
 }
 
 /* それぞれの見出し */
@@ -70,6 +70,17 @@ font-size: 20px;}
 }
 
 
+#head-box3 a{
+  transition: .5s;
+}
+
+#head-box3 a:hover{
+  background-color: #ff6f00c9;
+  color: #faf2e7;
+}
+
+
+
 
 /* ------------ここからmain ----------------------*/
 
@@ -79,22 +90,26 @@ font-size: 20px;}
 }
 
 #category-list{
-  display: flex;
+  /* display: flex; */
 }
 
 /* 実績リスト 写真*/
 #category-list > div{
-  width: 300px; /* 横に3つ並べるので1/3のサイズを指定 */
-  margin: 0 80px; /* 左右にそれぞれ8pxの余白 */
-  padding-left: 100px;
+  /* width: 300px; 
+  margin: 0 80px; 
+  padding-left: 100px; */
 }
 
 /* 実績リスト 文字 */
 .explanaton{
-  font-size: 20px;
+  /* font-size: 20px;
   text-align: center;
-  padding-left: 100px;
+  padding-left: 100px;*/
+}
 
+.swiper {
+  width: 600px;
+  height: 300px;
 }
 
 /*ーーーーーー SKILL ーーーーーーー */
