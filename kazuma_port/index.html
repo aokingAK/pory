@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kazuma Aoki</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 
 
@@ -68,44 +67,32 @@
     <!-- Works -->
      <section id="Works">
       <h2 id="category">Works</h2>
-        <div class="category-list">
-          <!-- Slider main container -->
-          <div class="swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
+        <div id="category-list">
+              <div class="category-work">
                 <a href="works-2.html">
                   <img src="image/プロフィールサイト.png" alt="">
                   <p class="explanaton">プロフィールサイト</p>
                 </a>
               </div>
 
-              <div class="swiper-slide">
+              <div class="category-work">
                 <a href="works-3.html">
-                <img src="image/美容室のHP.png" alt="">
-                <p class="explanaton">美容室のHP</p>
-              </a>
-            </div>
-              <div class="swiper-slide">
-                <a href="works-6.html">
-                <img src="image/大学のHP.png" alt="">
-                <p class="explanaton">大学のHP</p>
-              </a>
-            </div>
-              ...
-            </div>
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
+                  <img src="image/美容室のHP.png" alt="">
+                  <p class="explanaton">美容室のHP</p>
+                </a>
+              </div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+              <div class="category-work">
+               <a href="works-6.html">
+                  <img src="image/大学のHP.png" alt="">
+                  <p class="explanaton">大学のHP</p>
+               </a>
+            </div>
+        </div>
 
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-          </div>
-            </main>
+        <button class="button">ボタン</button>
+
+  </main>
     </section>
   <!-- ここまでメイン -->
 
@@ -178,8 +165,7 @@
   </footer>
   <!-- ここまでフッター -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+  <script src="js/event.js"></script>
 
 </body>
 </html>
