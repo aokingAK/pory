@@ -1,19 +1,28 @@
-$('.photo').slick({
-    autoplay: true,         //自動再生
-    autoplaySpeed: 1,       //自動再生のスピード
-    speed: 10000,            //スライドスピード
-    slidesToShow: 4,        //スライドの表示枚数
-    cssEase: "linear",      //スライドの動きを等速に
-    pauseOnHover: false,    //ホバーしても止まらないように
-    pauseOnFocus: false,    //フォーカスしても止まらないように
+$(function () {
+    $(".photo-left").slick({
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 10000,
+        cssEase: 'linear',
+        slidesToShow: 8,
+        swipe: false,
+        pauseOnFocus: false, 
+        pauseOnHover: false,
+        arrows: false,
+    });
 });
 
-// $('.photo').slick({
-//     autoplay: true,         //自動再生
-//     autoplaySpeed: 1,       //自動再生のスピード
-//     speed: 10000,            //スライドスピード
-//     slidesToShow: 4,        //スライドの表示枚数
-//     cssEase: "linear",      //スライドの動きを等速に
-//     pauseOnHover: false,    //ホバーしても止まらないように
-//     pauseOnFocus: false,    //フォーカスしても止まらないように
-// });
+$(function () {
+    $(".photo-right").slick({
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 10000,
+        cssEase: 'linear',
+        slidesToShow: 8,
+        swipe: false,
+        pauseOnFocus: false, 
+        pauseOnHover: false,
+        arrows: false,
+        rtl: true
+    });
+});
