@@ -147,10 +147,10 @@ body{
 
 .background{
   position: relative;
-  /* opacity: 20%; */
+  opacity: 20%;
   order: 10;
-  /* -ms-filter: blur(20px);
-  filter: blur(20px); */
+  -ms-filter: blur(20px);
+  filter: blur(20px);
   width: 30%;
 }
 
@@ -425,7 +425,7 @@ body{
 
 #footer-text{
   position: absolute;
-  left: 50%;
+  left: 40%;
   top: 10%;
 }
 
