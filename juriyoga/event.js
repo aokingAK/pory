@@ -40,7 +40,7 @@ $(function () {
                 const bPosition = $(this).offset().top;
                 // スクロールした量が要素の高さを上回ったら
                 // その数値にウィンドウの高さを引き、最後に200pxを足す
-            if (wScroll > bPosition - wHeight + 200) {
+            if (wScroll > bPosition - wHeight + 100) {
                 $(this).addClass("fadeIn");
             }
         });
@@ -55,3 +55,17 @@ text.classList.add('is-active');
 setInterval(() => {
   text.classList.toggle('is-active');
 }, 3000);
+
+$(function () {
+    $('a[href^="#"]').click(function () {
+      var href = $(this).attr("href");
+      var target = $(href == "#" || href == "" ? 'html' : href);
+      var position = target.offset().top; 
+      var speed = 500;
+      $("html, body").animate({
+        scrollTop: position
+      }, speed, "swing");
+      return false;
+    });
+  });
+  
