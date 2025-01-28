@@ -15,6 +15,36 @@ h4{
   margin: 0;
 }
 
+/* 全体フォント設定 */
+body{
+  color: rgb(42, 42, 42);
+}
+
+/* フェードインの設定 */
+/* 下から上に移動しながらフェードイン */
+.fadeInUp {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+@keyframes fadeIn {
+  0% {
+  }
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+/* フェードインさせるクラス */
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+
 /* サイドバーの設定 */
 #side-menu{
   width: 12%;
@@ -66,6 +96,18 @@ a.link:hover::before {
 /* トップ写真の設定 */
 #top-visual >img{
   width: 100%;
+}
+.parallax_content{
+  display: flex;
+  height: 100%;
+  padding: 100%;
+  justify-content: center;
+  align-items: center;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
@@ -120,8 +162,12 @@ a.link:hover::before {
 }
 
 #work-items > a{
-  padding-right: 10%;
-  padding-bottom: 5%;
+  margin-right: 10%;
+  margin-bottom: 5%;
+}
+
+.work-title{
+  font-size: large;
 }
 
 
