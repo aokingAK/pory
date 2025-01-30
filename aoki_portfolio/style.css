@@ -18,7 +18,13 @@ h4{
 /* 全体フォント設定 */
 body{
   color: rgb(42, 42, 42);
+
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
+
 
 /* フェードインの設定 */
 /* 下から上に移動しながらフェードイン */
@@ -43,7 +49,9 @@ body{
   animation-fill-mode: forwards;
 }
 
-
+.delay{
+  transition-delay: 0.5s; 
+}
 
 /* サイドバーの設定 */
 #side-menu{
@@ -99,8 +107,9 @@ a.link:hover::before {
 }
 .parallax_content{
   display: flex;
-  height: 100%;
-  padding: 100%;
+   /* height: 100%; */
+  height: 100svh; /* とりあえず高さ決めましょう 100svhは画面と同じ高さの指定になります */
+  /* padding: 100%; ここもいったん削除します */
   justify-content: center;
   align-items: center;
 
@@ -108,8 +117,30 @@ a.link:hover::before {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  background-image: url('image/IMG_1294\ のコピー.png'); /* 背景の画像を指定します。 */
 }
 
+#familyname1{
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  width: 30%;
+}
+
+#name1{
+  position: absolute;
+  top: 0%;
+  left: 30%;
+  width: 30%;
+}
+
+#portfolio1{
+  position: absolute;
+  top: 17%;
+  left: 17%;
+  width: 30%;
+}
 
 /* キャッチコピーの設定 */
 #catch-copy{
@@ -144,7 +175,7 @@ a.link:hover::before {
   position: absolute;
   top: 30%;
   left: 30%;
-  border-top: 3px solid #000;
+  border-top: 3px solid #cabd09;
   width: 60%;
 }
 
@@ -161,7 +192,7 @@ a.link:hover::before {
   padding-top: 2%;
 }
 
-#work-items > a{
+#work-items > div{
   margin-right: 10%;
   margin-bottom: 5%;
 }
@@ -170,12 +201,49 @@ a.link:hover::before {
   font-size: large;
 }
 
+/* URLホバー時のアニメーション */
+.zoom-box {
+  overflow: hidden;
+}
+.c-bnr.zoom {
+  transition-duration: .5s;
+}
+.c-bnr.zoom:hover {
+  transform: scale(1.1);
+}
+
+
+#work-image1{
+  background-image: url('image/ITschool.png'); 
+  width: 400px;
+  height: 300px;
+}
+
+#work-image2{
+  background-image: url('image/profile.png');
+  width: 400px;
+  height: 300px;
+}
+
+#work-image3{
+  background-image: url('image/universeHP.png'); 
+  width: 400px;
+  height: 300px;
+}
+
+#work-image4{
+  background-image: url('image/beautysalonHP.png');
+  width: 400px;
+  height: 300px;
+}
+
 
 
 /* aboutの設定 */
 
 #about-title{
   position: relative;
+
 }
 
 #about{
@@ -216,7 +284,7 @@ a.link:hover::before {
 
 #hr2 {
   position: absolute;
-  border-top: 3px solid #000;
+  border-top: 3px solid #cabd09;
   width: 65%;
   top: 5%;
   left: 25%;
@@ -243,5 +311,5 @@ a.link:hover::before {
 #contact-block{
   padding-left: 15%;
   padding-bottom: 5%;
-  background-color: #b9ad0f;
+  background-color: #ca714b;
 }

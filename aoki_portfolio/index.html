@@ -6,7 +6,9 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Noto+Sans+JP&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
   <title>Aoki Kazuma</title>
 </head>
 <body>
@@ -22,8 +24,11 @@
         </ul>
       </nav>
       <div class="parallax_box" id="top-visual">
-        <div class="parallax_content" src="image/girl-4836394_1280.jpg" alt="トップ写真"></div>
+        <div class="parallax_content"></div>
       </div>
+      <img id="familyname1" class="fadeInUp" src="image/familyname1.png" alt="amilyname">
+      <img id="name1" class="fadeInUp delay" src="image/name.png" alt="name">
+      <img id="portfolio1" class="fadeInUp" src="image/portfolio.png" alt="portfolio">
     </div>
   </header>
   <!-- 固定サイドメニューバー  終了-->
@@ -52,26 +57,34 @@
       </div>
       <div class="fadeInUp" id="work-list">
         <ul id="work-items">
-          <a href="">
-            <li><img src="image/ITschool.png" alt="ITスクールのバナー"></li>
+          <div class="zoom-box">
+            <a href="works-4.html">
+              <div class="c-bnr zoom" id="work-image1"></div>
+            </a>
             <p class="work-title">ITスクールのバナー(架空)</p>
             <p class="work-title2">バナー作成</p>
-          </a>
-          <a href="">
-            <li><img src="image/profile.png" alt="プロフィールサイト"></li>
+          </div>
+          <div class="zoom-box">
+            <a href="works-2.html">
+              <div class="c-bnr zoom" id="work-image2"></div>
+            </a>
             <p class="work-title">プロフィールサイト(架空)</p>
             <p class="work-title2">Webページ作成</p>
-          </a>
-          <a href="">
-            <li> <img src="image/universeHP.png" alt="大学のHP"></li>
+          </div>
+          <div class="zoom-box">
+            <a href="works-6.html">
+              <div class="c-bnr zoom" id="work-image3"></div>
+            </a>
             <p class="work-title">大学のHP(架空)</p>
             <p class="work-title2">HP作成</p>
-          </a>
-          <a href="">
-            <li><img src="image/beautysalonHP.png" alt="美容室のHP"></li>
+          </div>
+          <div class="zoom-box">
+            <a href="works-3.html">
+              <div class="c-bnr zoom" id="work-image4"></div>
+            </a>     
             <p class="work-title">美容室のHP(架空)</p>
-            <p class="work-title2">HP作成</p>
-          </a>          
+            <p class="work-title2">HP作成</p>  
+          </div> 
         </ul>
       </div>
     </section>
